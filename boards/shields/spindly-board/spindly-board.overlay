@@ -51,7 +51,15 @@
   };
 };
 
-&physical_layout0 {
-    kscan = <&kscan0>; // Label of the kscan node this layout uses
-    transform = <&default_transform>; // Label of the matrix transform this layout uses
+/ {
+  chosen{
+    zmk,kscan = &default_kscan;
+  };
+  default_kscan: kscan {
+    compatible = "zmk,kscan-gpio-direct";
+    label = "default_kscan";
+
+    input-gpio =
+      <&gpio0 1 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
+    }
 };
