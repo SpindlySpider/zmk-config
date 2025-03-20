@@ -2,9 +2,5 @@ if SHEILD_SPINDLY_BOARD
 
 config ZMK_KEYBOARD_NAME
   default "spindly-board"
-  SPI=y
-  INPUT=y
-  ZMK_MOUSE=y
-  PMW3610=y
 
 endif
