@@ -63,6 +63,6 @@
 / {
   chosen {
     zmk,input-listener = &trackball;
-  }
+  };
 
 };
