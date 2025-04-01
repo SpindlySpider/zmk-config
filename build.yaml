@@ -21,4 +21,4 @@
 include:
   - board: nice_nano
     shield: spindly-board
-
+    snippet: zmk-usb-logging
