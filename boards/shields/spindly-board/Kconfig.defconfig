@@ -6,8 +6,5 @@ config ZMK_KEYBOARD_NAME
 config ZMK_USB
     default y
 
-config CONFIG_LOG_PROCESS_THREAD_STARTUP_DELAY_MS
-    default 8000
-
 endif
 
