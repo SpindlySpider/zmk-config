@@ -18,7 +18,7 @@
 };
 
 #include <zephyr/dt-bindings/input/input-event-codes.h>
-#include <zephyr/dt-bindings/zmk/pointing.h>
+#include <dt-bindings/zmk/pointing.h>
 
 &spi0 {
     status = "okay";
@@ -60,7 +60,9 @@
   };
 };
 
-&msc{
-    compatible = "zmk,input-listener";
-    device = <&trackball>;
-}
+/ {
+  chosen {
+    zmk,input-listener = &trackball;
+  }
+
+};
