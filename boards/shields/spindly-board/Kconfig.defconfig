@@ -6,5 +6,7 @@ config ZMK_KEYBOARD_NAME
 config ZMK_USB
     default y
 
+config ZMK_POINTING
+    default y
 endif
 
