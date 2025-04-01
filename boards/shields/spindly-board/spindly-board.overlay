@@ -17,10 +17,6 @@
     };
 };
 
-// SDIO - 115 - 18
-// SCK - 113 - 15
-// NCS - 111 - 14
-
 &spi0 {
     status = "okay";
     compatible = "nordic,nrf-spim";
