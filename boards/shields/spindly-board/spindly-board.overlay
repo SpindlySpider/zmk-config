@@ -81,19 +81,10 @@
     };
 };
 
-&right_listener {
+&trackball_listener {
     status = "okay";
     input-processors = <&zip_temp_layer 4 500>;
 
-    scroller {
-        layers = <2>;
-        input-processors = <&zip_xy_scaler 1 4 &zip_xy_to_scroll_mapper>;
-    };
-
-    sniper {
-        layers = <3>;
-        input-processors = <&zip_xy_scaler 1 4>;
-    };
 };
 
 };
