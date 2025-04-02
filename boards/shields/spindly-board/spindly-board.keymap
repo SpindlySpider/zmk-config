@@ -12,10 +12,6 @@
       bindings = <
       &kp A
       >;
-      &mmv_input_listener {
-    compatible = "zmk,input-listener";
-    device = <&trackball>;
-      };
     };
   };
 };
